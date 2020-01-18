@@ -11,7 +11,7 @@ ms.locfileid: "75559666"
 ---
 # <a name="get-started-with-f-in-visual-studio-code"></a>Visual Studio Code에서 F# 시작
 
-[Ionide 플러그인](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp)을 사용하여 [Visual Studio Code](https://code.visualstudio.com)에서 F#을 작성하여 IntelliSense 및 코드 리팩터링을 사용하는 뛰어난 플랫폼 간 경량 IDE(통합 개발 환경) 환경을 가져올 수 있습니다. 이 플러그인을 더 자세히 알고 싶다면 [Ionide.io](http://ionide.io)를 방문합니다.
+리팩터링 F# [ide 플러그](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) 인을 사용하여 [Visual Studio Code](https://code.visualstudio.com) 을 작성하여 IntelliSense 및 코드를 사용 하는 뛰어난 플랫폼 간 경량 ide (통합 개발 환경) 환경을 가져올 수 있습니다. 이 플러그인을 더 자세히 알고 싶다면 [Ionide.io](http://ionide.io)를 방문합니다.
 
 시작하려면 [F#과 Ionide 플러그인의 설치](install-fsharp.md#install-f-with-visual-studio-code)가 올바르게 되어있는지 확인합니다.
 
@@ -97,7 +97,7 @@ val it : string = "appleyay"
 
 여기에서 볼 수 있듯이 `toPigLatin`은 단어를 입력으로 사용하고 해당 단어의 Pig-Latin 표현으로 변환하는 함수입니다. 이에 대한 규칙은 다음과 같습니다.
 
-단어의 첫 문자가 모음으로 시작하는 경우 단어의 끝에 "yay"를 추가합니다. 모음으로 시작하지 않으면 첫 번째 문자를 단어의 끝으로 이동하여 "ay"를 추가합니다.
+단어의 첫 문자가 모음으로 시작 하는 경우 단어의 끝에 "yay"를 추가 합니다. 모음으로 시작 하지 않으면 첫 번째 문자를 단어의 끝으로 이동하여 "ay"를 추가 합니다.
 
 FSI.EXE에서 다음을 발견할 수 있습니다.
 
@@ -109,7 +109,7 @@ val toPigLatin : word:string -> string
 
 함수의 본문에는 다음과 같은 두 가지 요소가 있습니다.
 
-1. 지정된 문자(`c`)가 [패턴 일치](../language-reference/pattern-matching.md)를 통해 제공된 패턴 중 하나와 일치하는지 확인하여 모음인지 여부를 확인하는 `isVowel`이라는 내부 함수입니다.
+1. 지정 된 문자 (`c`)가 [패턴 일치](../language-reference/pattern-matching.md)를 통해 제공 된 패턴 중 하 나와 일치 하는지 확인하여 모음 인지 여부를 확인 하는 `isVowel`이라는 내부 함수입니다.
 
    [!code-fsharp[ToPigLatin](~/samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
@@ -119,14 +119,13 @@ val toPigLatin : word:string -> string
 
 따라서 `toPigLatin` 흐름은 다음과 같습니다.
 
-입력 단어의 첫 문자가 모음인지 확인합니다. 이 경우 "yay"를 단어 끝에 연결합니다. 그렇지 않으면 첫 번째 문자를 단어의 끝으로 이동하여 "ay"를 추가합니다.
+입력 단어의 첫 문자가 모음 인지 확인 합니다. 이 경우 "yay"를 단어 끝에 연결 합니다. 그렇지 않으면 첫 번째 문자를 단어의 끝으로 이동하여 "ay"를 추가 합니다.
 
 이에 대한 최종 정보는 다음과 같습니다. 다른 많은 언어와 달리 함수에서 반환할 명시적인 명령이 없습니다. F#이 식 기반이고 함수 본문의 마지막 식이 반환 값이기 때문입니다. `if..then..else` 자체가 식이므로 `then` 블록의 본문이나 `else` 블록의 본문은 입력 값에 따라 반환됩니다.
 
-
 ## <a name="turn-the-console-app-into-a-pig-latin-generator"></a>콘솔 앱을 Pig 라틴어 생성기로 전환 합니다.
 
-이 문서의 이전 섹션에서는 초기 함수를 작성하고 FSI.EXE를 사용하여 대화형으로 실행하는 F# 코드를 작성하는 일반적인 첫 번째 단계를 보여 주었습니다. 이를 REPL 기반 개발이라고 하며, 여기서 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)은 "읽기-평가-인쇄 루프"를 나타냅니다. 작업을 수행할 때까지 기능을 시험해 볼 수 있는 좋은 방법입니다.
+이 문서의 이전 섹션에서는 초기 함수를 작성하고 FSI.EXE를 F# 사용하여 대화형으로 실행 하는 코드를 작성 하는 일반적인 첫 번째 단계를 보여 주었습니다. 이를 repl 기반 개발 이라고 하며, 여기서 [repl](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) 은 "읽기-평가-인쇄 루프"를 나타냅니다. 작업을 수행할 때까지 기능을 시험해 볼 수 있는 좋은 방법입니다.
 
 REPL 기반 개발의 다음 단계는 작업 코드를 F# 구현 파일로 이동 하는 것입니다. 그런 다음 F# 컴파일러에서 실행할 수 있는 어셈블리로 컴파일할 수 있습니다.
 
