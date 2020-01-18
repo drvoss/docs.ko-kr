@@ -1,6 +1,6 @@
 ---
 title: 명령줄 도구를 사용하여 F# 시작
-description: 운영 체제 (Windows, macOS 또는 Linux)에서 F# .NET Core CLI 사용 하 여 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 대해 알아봅니다.
+description: 운영 체제 (Windows, macOS 또는 Linux)에서 F# .NET Core CLI 사용하여 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 대해 알아봅니다.
 ms.date: 03/26/2018
 ms.openlocfilehash: aa3ed84660a951eeafc11a00ea3831f587b6d876
 ms.sourcegitcommit: f8c36054eab877de4d40a705aacafa2552ce70e9
@@ -11,7 +11,7 @@ ms.locfileid: "75559489"
 ---
 # <a name="get-started-with-f-with-the-net-core-cli"></a>.NET Core CLI를 사용하여 F# 시작
 
-이 문서에서는 .NET Core CLI를 사용 하 여 운영 F# 체제 (Windows, Macos 또는 Linux)에서를 시작 하는 방법을 설명 합니다. 콘솔 응용 프로그램에서 호출 하는 클래스 라이브러리를 사용 하 여 다중 프로젝트 솔루션을 빌드하는 과정을 거칩니다.
+이 문서에서는 .NET Core CLI를 사용하여 운영 F# 체제 (Windows, Macos 또는 Linux)에서를 시작 하는 방법을 설명 합니다. 콘솔 응용 프로그램에서 호출 하는 클래스 라이브러리를 사용하여 다중 프로젝트 솔루션을 빌드하는 과정을 거칩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
